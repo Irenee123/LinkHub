@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer with Contact Number</title>
+    <style>
+        /* Footer Styling */
+        .footer {
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            padding: 40px 20px; /* Increased height and padding for a better look */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin-bottom: 20px;
+        }
+
+        /* Links Section */
+        .footer-links {
+            flex: 1;
+            text-align: left;
+            margin: 10px 20px;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Email and Number Section */
+        .footer-email {
+            flex: 1;
+            text-align: right;
+            margin: 10px 20px;
+            font-size: 14px;
+        }
+
+        .footer-email p {
+            margin: 5px 0;
+        }
+
+        /* Subscription Box Section */
+        .subscribe-box {
+            flex: 1;
+            text-align: center;
+            margin: 10px 20px;
+        }
+
+        .subscribe-box p {
+            margin-bottom: 10px;
+        }
+
+        .subscribe-box input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 30px; /* Increased spacing between box and button */
+        }
+
+        .subscribe-box button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #1e90ff;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .subscribe-box button:hover {
+            background-color: #104e8b;
+        }
+
+        /* Footer Bottom Section */
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px; /* Space above the footer bottom text */
+            font-size: 12px;
+            color: #ccc;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-links, .footer-email, .subscribe-box {
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="footer-content">
+        <!-- Links Section -->
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#counsellor">Counsellor</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#career">Career Articles/Advice</a>
+        </div>
+
+        <!-- Newsletter Subscription Section -->
+        <div class="subscribe-box">
+            <p>Subscribe to our newsletter!</p>
+            <form action="#" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- Email and Number Section -->
+        <div class="footer-email">
+            <p>Email: veiledvision@gmail.com</p>
+            <p>Number: 0787887565</p>
+        </div>
+    </div>
+
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+        <p>© 2024 VeiledVision. All Rights Reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>
